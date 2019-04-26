@@ -1,0 +1,1805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>SGM_Parking.kml</name>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>My Places</name>
+		<open>1</open>
+		<Camera>
+			<longitude>-118.2840721197494</longitude>
+			<latitude>34.03352784673318</latitude>
+			<altitude>48.26677662367468</altitude>
+			<heading>118.5687266497298</heading>
+			<tilt>42.4003843366216</tilt>
+			<roll>-4.639872907167288</roll>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</Camera>
+		<Style>
+			<ListStyle>
+				<listItemType>check</listItemType>
+				<ItemIcon>
+					<state>open</state>
+					<href>:/mysavedplaces_open.png</href>
+				</ItemIcon>
+				<ItemIcon>
+					<state>closed</state>
+					<href>:/mysavedplaces_closed.png</href>
+				</ItemIcon>
+				<bgColor>00ffffff</bgColor>
+				<maxSnippetLines>2</maxSnippetLines>
+			</ListStyle>
+		</Style>
+		<Placemark>
+			<name>Boundary #1</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2882858294938,34.02071093813628,0 -118.2883615243211,34.02074715161189,0 -118.2883282907974,34.02079300783271,0 -118.2883441524868,34.02080375805693,0 -118.2883664109477,34.02076523106314,0 -118.2886591778752,34.02089248992979,0 -118.2886356806796,34.02092782315094,0 -118.2886922801621,34.02095590990298,0 -118.2885649550304,34.02115105538276,0 -118.2885114524847,34.02113095309963,0 -118.2884781503847,34.02118211356414,0 -118.2880950304343,34.02101373617383,0 -118.2881276791214,34.02096363101384,0 -118.2880774108233,34.02094090495228,0 -118.2882054247247,34.02074205289179,0 -118.2882537662083,34.02076529230129,0 -118.2882858294938,34.02071093813628,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #1</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.288372847425,34.02081196979902,0 -118.288398993535,34.0207697639872,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #2</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2883963131462,34.02082862269339,0 -118.2884263811657,34.02078008600573,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #3</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2884230471392,34.02083999985699,0 -118.2884531151507,34.02079146316404,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #4</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2884491274871,34.02085243216135,0 -118.2884798491445,34.02080284031537,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #5</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2884745884499,34.02086326754396,0 -118.2885085441012,34.02081105202662,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #6</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2885000494224,34.0208741029217,0 -118.2885333514145,34.02082294254448,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #7</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2885280565045,34.0208860218321,0 -118.2885607390936,34.02083326452956,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #8</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2885528638476,34.02089791234872,0 -118.2885848927842,34.02084621017629,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #9</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2885802858116,34.02090558227518,0 -118.2886116268378,34.02085758730004,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #10</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2886057125828,34.0209190696964,0 -118.2886377415022,34.02086736751315,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #11</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2886349927774,34.02093153035931,0 -118.2886676753436,34.02087877301478,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Parking #1</name>
+			<LookAt>
+				<longitude>-118.2885198095759</longitude>
+				<latitude>34.02092618353592</latitude>
+				<altitude>0</altitude>
+				<heading>29.23075743465762</heading>
+				<tilt>0</tilt>
+				<range>78.37720384791899</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2883801142707,34.02077602379537,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #2</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2885055520973</longitude>
+				<latitude>34.02085864380901</latitude>
+				<altitude>0</altitude>
+				<heading>25.20639859240589</heading>
+				<tilt>0</tilt>
+				<range>44.85341991825958</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2884058306692,34.02078832581888,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #3</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2885055520973</longitude>
+				<latitude>34.02085864380901</latitude>
+				<altitude>0</altitude>
+				<heading>25.20639859240589</heading>
+				<tilt>0</tilt>
+				<range>44.85341991825958</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2884328496792,34.02080023264899,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #4</name>
+			<LookAt>
+				<longitude>-118.2885055520973</longitude>
+				<latitude>34.02085864380901</latitude>
+				<altitude>0</altitude>
+				<heading>25.20639859240589</heading>
+				<tilt>0</tilt>
+				<range>44.85341991825958</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2884588767203,34.02081243536848,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #5</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2884625281839</longitude>
+				<latitude>34.02082141842404</latitude>
+				<altitude>0</altitude>
+				<heading>25.20646386697857</heading>
+				<tilt>4.664709819874668</tilt>
+				<range>35.95517411832685</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2884834561405,34.02082464550728,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #6</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2884625281839</longitude>
+				<latitude>34.02082141842404</latitude>
+				<altitude>0</altitude>
+				<heading>25.20646386697857</heading>
+				<tilt>4.664709819874668</tilt>
+				<range>35.95517411832685</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2885085487119,34.02083388700878,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #7</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2885055520973</longitude>
+				<latitude>34.02085864380901</latitude>
+				<altitude>0</altitude>
+				<heading>25.20639859240589</heading>
+				<tilt>0</tilt>
+				<range>44.85341991825958</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2885348553583,34.02084549163128,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #8</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2885055520973</longitude>
+				<latitude>34.02085864380901</latitude>
+				<altitude>0</altitude>
+				<heading>25.20639859240589</heading>
+				<tilt>0</tilt>
+				<range>44.85341991825958</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2885618743916,34.02085739842558,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #9</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2885055520973</longitude>
+				<latitude>34.02085864380901</latitude>
+				<altitude>0</altitude>
+				<heading>25.20639859240589</heading>
+				<tilt>0</tilt>
+				<range>44.85341991825958</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2885878224162,34.02086683868168,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #10</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2885055520973</longitude>
+				<latitude>34.02085864380901</latitude>
+				<altitude>0</altitude>
+				<heading>25.20639859240589</heading>
+				<tilt>0</tilt>
+				<range>44.85341991825958</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2886129761123,34.02088348091439,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #11</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2885055520973</longitude>
+				<latitude>34.02085864380901</latitude>
+				<altitude>0</altitude>
+				<heading>25.20639859240589</heading>
+				<tilt>0</tilt>
+				<range>44.85341991825958</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2886419395933,34.02089341467816,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Lane #12</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2886318297744,34.02095707361554,0 -118.2886864873863,34.02098314883271,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #13</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2886178279652,34.02097974477282,0 -118.2886745825807,34.0210050946281,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #14</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2886033440832,34.02100205700869,0 -118.2886561577742,34.02102591099649,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #15</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.288588616574,34.02102354146868,0 -118.2886441470319,34.02104794735953,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #16</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2885755274299,34.02104434344534,0 -118.2886281819737,34.02106877054817,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #17</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2885612877911,34.02106725016744,0 -118.2886142072848,34.02109070590047,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #18</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2885465195605,34.02108861405411,0 -118.2885989570435,34.02111248557533,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #19</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.288533230205,34.02111088845299,0 -118.2885848722871,34.02113449179426,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #20</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2885170304099,34.02113353288492,0 -118.2885722323222,34.02115623525928,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Parking #12</name>
+			<LookAt>
+				<longitude>-118.2884872177912</longitude>
+				<latitude>34.02098892019093</latitude>
+				<altitude>0</altitude>
+				<heading>25.20645005344222</heading>
+				<tilt>4.664709819874746</tilt>
+				<range>35.95517411547472</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.288678822836,34.02096226295919,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #13</name>
+			<LookAt>
+				<longitude>-118.2884872177912</longitude>
+				<latitude>34.02098892019093</latitude>
+				<altitude>0</altitude>
+				<heading>25.20645005344222</heading>
+				<tilt>4.664709819874746</tilt>
+				<range>35.95517411547472</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2886622828112,34.02098430272487,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #14</name>
+			<LookAt>
+				<longitude>-118.2884872177912</longitude>
+				<latitude>34.02098892019093</latitude>
+				<altitude>0</altitude>
+				<heading>25.20645005344222</heading>
+				<tilt>4.664709819874746</tilt>
+				<range>35.95517411547472</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2886433804936,34.02100580204579,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #15</name>
+			<LookAt>
+				<longitude>-118.2884872177912</longitude>
+				<latitude>34.02098892019093</latitude>
+				<altitude>0</altitude>
+				<heading>25.20645005344222</heading>
+				<tilt>4.664709819874746</tilt>
+				<range>35.95517411547472</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2886316358321,34.02102830154723,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking $16</name>
+			<LookAt>
+				<longitude>-118.2884872177912</longitude>
+				<latitude>34.02098892019093</latitude>
+				<altitude>0</altitude>
+				<heading>25.20645005344222</heading>
+				<tilt>4.664709819874746</tilt>
+				<range>35.95517411547472</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2886167317558,34.02104935632931,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #17</name>
+			<LookAt>
+				<longitude>-118.2884872177912</longitude>
+				<latitude>34.02098892019093</latitude>
+				<altitude>0</altitude>
+				<heading>25.20645005344222</heading>
+				<tilt>4.664709819874746</tilt>
+				<range>35.95517411547472</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2886047950528,34.02106966789734,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #18</name>
+			<LookAt>
+				<longitude>-118.2884872177912</longitude>
+				<latitude>34.02098892019093</latitude>
+				<altitude>0</altitude>
+				<heading>25.20645005344222</heading>
+				<tilt>4.664709819874746</tilt>
+				<range>35.95517411547472</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2885902839629,34.02108982460781,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #19</name>
+			<LookAt>
+				<longitude>-118.2884872177912</longitude>
+				<latitude>34.02098892019093</latitude>
+				<altitude>0</altitude>
+				<heading>25.20645005344222</heading>
+				<tilt>4.664709819874746</tilt>
+				<range>35.95517411547472</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2885763138664,34.02111392517508,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #20</name>
+			<LookAt>
+				<longitude>-118.2884824861403</longitude>
+				<latitude>34.02098649841521</latitude>
+				<altitude>0</altitude>
+				<heading>25.20645270079111</heading>
+				<tilt>4.664709819874589</tilt>
+				<range>35.95517411604641</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2885624760897,34.0211390563999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Lane #21</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2884433294768,34.02117330955481,0 -118.2884742125437,34.02112720894236,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #22</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2884193195577,34.02116277613978,0 -118.2884492959176,34.02111691052603,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #23</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2883920235517,34.02115212706229,0 -118.2884225469227,34.02110477068641,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #24</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2883647635752,34.02114265838919,0 -118.2883973793773,34.02109098062616,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #25</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2883376956047,34.02113034896811,0 -118.2883704650739,34.02108048046424,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #26</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.288311227532,34.02111944009643,0 -118.2883438103281,34.02106951479661,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #27</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2882853076233,34.02110758036959,0 -118.2883166364964,34.02105948013619,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #28</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2882610679462,34.02109521415566,0 -118.2882905378067,34.02104873139445,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #29</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2882338071344,34.02108457878953,0 -118.2882633377723,34.02103642031945,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #30</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2882104445012,34.02107430148151,0 -118.2882435412824,34.02102078349571,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #31</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2881585293546,34.02106687086955,0 -118.2881990470149,34.02100165660008,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #32</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2881092705067,34.02104356528419,0 -118.2881493207719,34.02098176896488,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #33</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2880905044976,34.02101898535101,0 -118.2881247666981,34.02096769804762,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Parking #21</name>
+			<LookAt>
+				<longitude>-118.2883111420536</longitude>
+				<latitude>34.02104662896132</latitude>
+				<altitude>0</altitude>
+				<heading>25.20654856721786</heading>
+				<tilt>4.664709819874433</tilt>
+				<range>35.9551741211408</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2884718856963,34.02116327131154,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #22</name>
+			<LookAt>
+				<longitude>-118.288343239345</longitude>
+				<latitude>34.02106078437517</latitude>
+				<altitude>0</altitude>
+				<heading>25.20653060885695</heading>
+				<tilt>4.664709819874433</tilt>
+				<range>35.95517412213633</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2884427382383,34.02115465903678,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #23</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.288343239345</longitude>
+				<latitude>34.02106078437517</latitude>
+				<altitude>0</altitude>
+				<heading>25.20653060885695</heading>
+				<tilt>4.664709819874433</tilt>
+				<range>35.95517412213633</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2884144712807,34.02114194250006,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #24</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.288343239345</longitude>
+				<latitude>34.02106078437517</latitude>
+				<altitude>0</altitude>
+				<heading>25.20653060885695</heading>
+				<tilt>4.664709819874433</tilt>
+				<range>35.95517412213633</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2883885394288,34.02113351431301,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #25</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.288343239345</longitude>
+				<latitude>34.02106078437517</latitude>
+				<altitude>0</altitude>
+				<heading>25.20653060885695</heading>
+				<tilt>4.664709819874433</tilt>
+				<range>35.95517412213633</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2883609448579,34.02112443871812,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #26</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.288343239345</longitude>
+				<latitude>34.02106078437517</latitude>
+				<altitude>0</altitude>
+				<heading>25.20653060885695</heading>
+				<tilt>4.664709819874433</tilt>
+				<range>35.95517412213633</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2883329858926,34.02111240421488,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #27</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.288343239345</longitude>
+				<latitude>34.02106078437517</latitude>
+				<altitude>0</altitude>
+				<heading>25.20653060885695</heading>
+				<tilt>4.664709819874433</tilt>
+				<range>35.95517412213633</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2883083039465,34.02110052311398,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #28</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2882744303114</longitude>
+				<latitude>34.02099728793353</latitude>
+				<altitude>0</altitude>
+				<heading>25.20656910724396</heading>
+				<tilt>4.664709819874512</tilt>
+				<range>35.95517412756421</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2882834168779,34.02108761003831,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #29</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2882744303114</longitude>
+				<latitude>34.02099728793353</latitude>
+				<altitude>0</altitude>
+				<heading>25.2065691072439</heading>
+				<tilt>4.664709819874433</tilt>
+				<range>35.95517412893514</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2882566622308,34.02107660102666,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #30</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2882744303114</longitude>
+				<latitude>34.02099728793353</latitude>
+				<altitude>0</altitude>
+				<heading>25.2065691072439</heading>
+				<tilt>4.664709819874433</tilt>
+				<range>35.95517412893514</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2882301611117,34.02106397905725,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #31</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2882744303114</longitude>
+				<latitude>34.02099728793353</latitude>
+				<altitude>0</altitude>
+				<heading>25.2065691072439</heading>
+				<tilt>4.664709819874433</tilt>
+				<range>35.95517412893514</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2882048141043,34.02105409031513,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #32</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2882744303114</longitude>
+				<latitude>34.02099728793353</latitude>
+				<altitude>0</altitude>
+				<heading>25.2065691072439</heading>
+				<tilt>4.664709819874433</tilt>
+				<range>35.95517412893514</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2881593529832,34.02103464364241,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #33</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2882744303114</longitude>
+				<latitude>34.02099728793353</latitude>
+				<altitude>0</altitude>
+				<heading>25.2065691072439</heading>
+				<tilt>4.664709819874433</tilt>
+				<range>35.95517412893514</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2881142173544,34.02101361715751,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Lane #34</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2881400814935,34.02093957560844,0 -118.2880840582191,34.0209159126706,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #35</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2881560767815,34.02091702345511,0 -118.2880994254034,34.02089492171787,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #36</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2881702095221,34.0208939720091,0 -118.288112493795,34.02087234427921,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #37</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2881834120453,34.02087254705819,0 -118.2881276089122,34.0208498937716,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #38</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2881981919208,34.02085018096128,0 -118.2881404695158,34.02082766138071,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #39</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2882103337967,34.02082874342464,0 -118.2881527848047,34.02080455334016,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #40</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2882253528126,34.02080775637982,0 -118.2881692784851,34.02078329245859,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #41</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2882415074627,34.02078655771925,0 -118.2881809388855,34.02075950507953,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #42</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2882520525807,34.02076423241928,0 -118.2881959464418,34.02073894626793,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Parking #34</name>
+			<LookAt>
+				<longitude>-118.2881933098096</longitude>
+				<latitude>34.02084302600176</latitude>
+				<altitude>0</altitude>
+				<heading>25.20653179668987</heading>
+				<tilt>4.561546558154303</tilt>
+				<range>57.24967195117379</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2880973538222,34.02093376236085,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #35</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2881933098096</longitude>
+				<latitude>34.02084302600176</latitude>
+				<altitude>0</altitude>
+				<heading>25.20653179668987</heading>
+				<tilt>4.561546558154303</tilt>
+				<range>57.24967195117379</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2881113744963,34.02091125286729,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #36</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2881933098096</longitude>
+				<latitude>34.02084302600176</latitude>
+				<altitude>0</altitude>
+				<heading>25.20653179668987</heading>
+				<tilt>4.561546558154303</tilt>
+				<range>57.24967195117379</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2881218399297,34.02088935561522,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #37</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2881933098096</longitude>
+				<latitude>34.02084302600176</latitude>
+				<altitude>0</altitude>
+				<heading>25.20653179668987</heading>
+				<tilt>4.561546558154303</tilt>
+				<range>57.24967195117379</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.288134830773,34.02086862922985,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #38</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2881933098096</longitude>
+				<latitude>34.02084302600176</latitude>
+				<altitude>0</altitude>
+				<heading>25.20653179668987</heading>
+				<tilt>4.561546558154303</tilt>
+				<range>57.24967195117379</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2881518959407,34.0208426429677,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #39</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2881933098096</longitude>
+				<latitude>34.02084302600176</latitude>
+				<altitude>0</altitude>
+				<heading>25.20653179668987</heading>
+				<tilt>4.561546558154303</tilt>
+				<range>57.24967195117379</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2881638157774,34.02082191381237,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #40</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2881933098096</longitude>
+				<latitude>34.02084302600176</latitude>
+				<altitude>0</altitude>
+				<heading>25.20653179668987</heading>
+				<tilt>4.561546558154303</tilt>
+				<range>57.24967195117379</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2881772773858,34.02079850342876,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #41</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2881933098096</longitude>
+				<latitude>34.02084302600176</latitude>
+				<altitude>0</altitude>
+				<heading>25.20653179668987</heading>
+				<tilt>4.561546558154303</tilt>
+				<range>57.24967195117379</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2881907248861,34.02077875112478,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #42</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.2881933098096</longitude>
+				<latitude>34.02084302600176</latitude>
+				<altitude>0</altitude>
+				<heading>25.20653179668987</heading>
+				<tilt>4.561546558154303</tilt>
+				<range>57.24967195117379</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2882069782648,34.02075771067009,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Lane #43</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2884340565526,34.02103119600964,0 -118.2884643599158,34.02098694600295,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #44</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.288406504574,34.02102398091567,0 -118.288438461721,34.02097336681057,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #45</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2883800752128,34.02101278616229,0 -118.2884121934911,34.02096051433709,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #46</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2883540051735,34.02099908240417,0 -118.2883847488379,34.02094980726879,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #47</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2883297844552,34.02098963308968,0 -118.2883602245268,34.02093763704412,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #48</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2883032992949,34.02097488900968,0 -118.2883328375109,34.02092868721628,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #49</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2882769151087,34.02096371402616,0 -118.2883070699854,34.02091689965769,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #50</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2882475529586,34.02095402228942,0 -118.28828165581,34.02090091967118,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Parking #43</name>
+			<LookAt>
+				<longitude>-118.28833317166</longitude>
+				<latitude>34.0209566893491</latitude>
+				<altitude>0</altitude>
+				<heading>25.2064535446884</heading>
+				<tilt>4.561546558154224</tilt>
+				<range>57.24967194910836</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2884703221187,34.0210067003732,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #44</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.28833317166</longitude>
+				<latitude>34.0209566893491</latitude>
+				<altitude>0</altitude>
+				<heading>25.2064535446884</heading>
+				<tilt>4.561546558154224</tilt>
+				<range>57.24967194910836</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2884405244674,34.02099245566094,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #45</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.28833317166</longitude>
+				<latitude>34.0209566893491</latitude>
+				<altitude>0</altitude>
+				<heading>25.2064535446884</heading>
+				<tilt>4.561546558154224</tilt>
+				<range>57.24967194910836</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.288417695923,34.02098267669811,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #46</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.28833317166</longitude>
+				<latitude>34.0209566893491</latitude>
+				<altitude>0</altitude>
+				<heading>25.2064535446884</heading>
+				<tilt>4.561546558154224</tilt>
+				<range>57.24967194910836</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2883918320594,34.02097084139051,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #47</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.28833317166</longitude>
+				<latitude>34.0209566893491</latitude>
+				<altitude>0</altitude>
+				<heading>25.2064535446884</heading>
+				<tilt>4.561546558154224</tilt>
+				<range>57.24967194910836</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.288363457136,34.02095977138799,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #48</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.28833317166</longitude>
+				<latitude>34.0209566893491</latitude>
+				<altitude>0</altitude>
+				<heading>25.2064535446884</heading>
+				<tilt>4.561546558154224</tilt>
+				<range>57.24967194910836</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2883388285445,34.02094580427477,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #49</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.28833317166</longitude>
+				<latitude>34.0209566893491</latitude>
+				<altitude>0</altitude>
+				<heading>25.2064535446884</heading>
+				<tilt>4.561546558154224</tilt>
+				<range>57.24967194910836</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.288314681036,34.02093290040654,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #50</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.28833317166</longitude>
+				<latitude>34.0209566893491</latitude>
+				<altitude>0</altitude>
+				<heading>25.2064535446884</heading>
+				<tilt>4.561546558154224</tilt>
+				<range>57.24967194910836</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2882859622037,34.02092430822147,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Lane #51</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2884914268932,34.02094658408625,0 -118.2884603830935,34.02099235562989,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #52</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2884657005705,34.0209331214275,0 -118.2884273691019,34.0209916905258,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #53</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2884375901301,34.02092215462768,0 -118.2883977708572,34.02098276616327,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #54</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2884103315331,34.02091152015027,0 -118.288366081511,34.02097565465184,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #55</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.288383072946,34.02090088566741,0 -118.288346413358,34.02095835948129,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #56</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2883570124048,34.02088815126445,0 -118.2883159755353,34.020950855069,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #57</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2883318690156,34.02087748661567,0 -118.2882905946749,34.02094182785524,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lane #58</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2883059211408,34.02086821881782,0 -118.2882634543573,34.02093036476204,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Parking #51</name>
+			<LookAt>
+				<longitude>-118.28833317166</longitude>
+				<latitude>34.0209566893491</latitude>
+				<altitude>0</altitude>
+				<heading>25.2064535446884</heading>
+				<tilt>4.561546558154224</tilt>
+				<range>57.24967194910836</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2884825204699,34.02098795118271,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #52</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.28833317166</longitude>
+				<latitude>34.0209566893491</latitude>
+				<altitude>0</altitude>
+				<heading>25.2064535446884</heading>
+				<tilt>4.561546558154224</tilt>
+				<range>57.24967194910836</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2884550757846,34.02097724412343,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #53</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.28833317166</longitude>
+				<latitude>34.0209566893491</latitude>
+				<altitude>0</altitude>
+				<heading>25.2064535446884</heading>
+				<tilt>4.561546558154224</tilt>
+				<range>57.24967194910836</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2884247343678,34.02096801132051,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #54</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.28833317166</longitude>
+				<latitude>34.0209566893491</latitude>
+				<altitude>0</altitude>
+				<heading>25.2064535446884</heading>
+				<tilt>4.561546558154224</tilt>
+				<range>57.24967194910836</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2883982011945,34.0209593971621,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #55</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.28833317166</longitude>
+				<latitude>34.0209566893491</latitude>
+				<altitude>0</altitude>
+				<heading>25.2064535446884</heading>
+				<tilt>4.561546558154224</tilt>
+				<range>57.24967194910836</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2883744570954,34.02094579211699,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #56</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.28833317166</longitude>
+				<latitude>34.0209566893491</latitude>
+				<altitude>0</altitude>
+				<heading>25.2064535446884</heading>
+				<tilt>4.561546558154224</tilt>
+				<range>57.24967194910836</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2883465581561,34.0209340401035,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #57</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.28833317166</longitude>
+				<latitude>34.0209566893491</latitude>
+				<altitude>0</altitude>
+				<heading>25.2064535446884</heading>
+				<tilt>4.561546558154224</tilt>
+				<range>57.24967194910836</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.288319028398,34.02091983111688,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parking #58</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.28833317166</longitude>
+				<latitude>34.0209566893491</latitude>
+				<altitude>0</altitude>
+				<heading>25.2064535446884</heading>
+				<tilt>4.561546558154224</tilt>
+				<range>57.24967194910836</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2882967044436,34.02090938870079,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Boundary #2</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-118.2884777876292,34.02104914005658,0 -118.2885305372413,34.02096784574396,0 -118.2885154728572,34.02095939448835,0 -118.2884880080917,34.02099704131462,0 -118.2882750038097,34.02090872805199,0 -118.2883050696198,34.02086788661015,0 -118.2882833734835,34.0208602777619,0 -118.2882327845474,34.02094297288163,0 -118.2882483630937,34.02095081232424,0 -118.2882716705051,34.02091264081587,0 -118.288484441183,34.02100174146751,0 -118.2884610347833,34.02104525493193,0 -118.2884777876292,34.02104914005658,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Entrance</name>
+			<LookAt>
+				<longitude>-118.28833317166</longitude>
+				<latitude>34.0209566893491</latitude>
+				<altitude>0</altitude>
+				<heading>25.2064535446884</heading>
+				<tilt>4.561546558154224</tilt>
+				<range>57.24967194910836</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2883048713547,34.02071874794647,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Exit</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-118.28833317166</longitude>
+				<latitude>34.0209566893491</latitude>
+				<altitude>0</altitude>
+				<heading>25.2064535446884</heading>
+				<tilt>4.561546558154224</tilt>
+				<range>57.24967194910836</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2883482666775,34.02073731790733,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
