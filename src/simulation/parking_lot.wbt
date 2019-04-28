@@ -1,0 +1,27 @@
+#VRML_SIM R2019a utf8
+WorldInfo {
+  info [
+    "World generated using the Open Street Map to Webots importer"
+    "Author: David Mansolino <david.mansolino@epfl.ch>"
+  ]
+  northDirection 0 0 1
+  gpsCoordinateSystem "WGS84"
+  gpsReference 34.0143199 -118.28615 0
+  lineScale 7
+}
+Viewpoint {
+  orientation -0.7679684763570753 -0.6349924439411114 -0.08371986299252149 0.3400091094794968
+  position -0.9443999784467305 1.8349086247015634 6.26959856974784
+  near 3
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+CircleArena {
+  radius 100
+}
+ToyotaPrius {
+  controller "parking"
+  controllerArgs "roo.txt"
+}
