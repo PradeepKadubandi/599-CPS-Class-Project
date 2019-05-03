@@ -1,11 +1,11 @@
 classdef parking
     methods (Static)
-        function [cost_map] = generateCostMap(path_f, max_row, min_row, max_col, min_col)
+        function map= costmap(path_f, max_row, min_row, max_col, min_col)
             %% Initialize cost map
             SCALE = 0.000001;
             rows = ceil((max_row - min_row)/SCALE);
             cols = ceil((max_col - min_col)/SCALE);
-            cost_map = zeros(rows, cols);
+            map = zeros(rows, cols);
 
             %% Fill Cost map
             road_l = size(path_f);
@@ -35,18 +35,32 @@ classdef parking
                     % List out all points in the line
                     for col_i = x_st:x_en
                         row_i = ceil(m*col_i + c);
-                        cost_map(row_i, col_i) = 1;
+                        map(row_i, col_i) = 1;
                         row_i = floor(m*col_i + c);
-                        cost_map(row_i, col_i) = 1;
+                        map(row_i, col_i) = 1;
             %           fprintf("(%d, %d)\n", row_i, col_i);
                     end
                 end
             end
+            parking.cost_map = map;
         end
 
         function [normed_val] = normalize_val(val, min_val, max_val, to_val)
-            normed_val = ceil(((val - min_val)/(max_val - min_val)) * to_val) + 1;
+                normed_val = ceil(((val - min_val)/(max_val - min_val)) * to_val) + 1;
         end
-        
+
+        %check if this point is collision free
+        function flag = isFree(cost_map, node)
+                disp(node);
+                x = node(1);
+                y = node(2);
+                if(cost_map(x,y) == 1)
+                    flag = false;
+                    return
+                else
+                    flag = true;
+                    return
+                end
+         end      
     end
 end

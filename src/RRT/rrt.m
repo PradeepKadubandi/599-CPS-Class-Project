@@ -78,7 +78,6 @@ classdef rrt < handle
         
         function node = generateNewNode(Tree, rand, near)
             node = [rand(1), rand(2), -1];
-%             dis = sqrt((rand(1) - near(1))^2 - (rand(2) - near(2))^2); 
             node(3) = fulltan(double(rand(2) - near(2)), double(rand(1) - near(1)));
         end
         
@@ -105,25 +104,12 @@ classdef rrt < handle
                         break;
                     end
                 end
-                if(~flag && isFree(Tree, curr_node))
+                if(~flag && parking.isFree(Tree.costmap, curr_node))
                     rand_node = double(curr_node);
                     break;
                 end
             end
         end
-        
-        %check if this point is collision free
-        function flag = isFree(Tree, node)
-            x = node(1);
-            y = node(2);
-            if(Tree.costmap(x,y) == 1)
-                flag = false;
-                return
-            else
-                flag = true;
-                return
-            end
-       end
         
         %returns true if state is reached and add goalPos to tree
         function [flag, dis] = reachedGoal(Tree)
