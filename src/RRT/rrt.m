@@ -4,7 +4,7 @@ classdef rrt < handle
         startPos = [];
         goalPos = [];
         nodes = {[]};
-%         edges = {[]};
+        % edges = {[]};
         iterations = -1;
         costmap = nan;
         s = [];
@@ -13,7 +13,7 @@ classdef rrt < handle
     end
     
     methods
-        %constructor for rrt
+        % constructor for rrt
         function RRT= rrt(costmap, iterations, startPos, goalPos, minTurning)
             RRT.costmap = costmap;
             RRT.iterations = iterations;
@@ -30,8 +30,9 @@ classdef rrt < handle
                 rand = random(Tree);
                 [near, distance] = nearestNeighbor(Tree, rand);
                 newNode = generateNewNode(Tree, rand, Tree.nodes{near});
-                Tree.nodes{i} = newNode; %add new node to list of nodes
-%                 Tree.edges{i-1} = [near, distance, newNode]; 
+                Tree.nodes{i} = newNode;
+                % add new node to list of nodes
+                % Tree.edges{i-1} = [near, distance, newNode]; 
 
                 %add an edge btw nearst node in tree and new node
                 Tree.s(i-1) = near;
@@ -48,17 +49,17 @@ classdef rrt < handle
         %returns a path from startPos to goalPos
         function pathPos = findPath(Tree)
             pathPos={[]};
-            fprintf('number of nodes in graph: %.1f\n', length(Tree.nodes));
+            % fprintf('number of nodes in graph: %.1f\n', length(Tree.nodes));
             
             G = graph(Tree.s, Tree.t, Tree.weight);
             path = shortestpath(G, 1, length(Tree.nodes));
-            disp(path);
+            % disp(path);
             for i = 1:length(path)
                 pathPos{i} = Tree.nodes{path(i)};
             end
         end
         
-        %return the nearest node in tree
+        % return the nearest node in tree
         function [near, distance] = nearestNeighbor(Tree, rand_node)
             distance = realmax;
             near = -1;
