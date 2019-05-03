@@ -51,7 +51,7 @@ classdef parking
 
         %check if this point is collision free
         function flag = isFree(cost_map, node)
-                disp(node);
+                % disp(node);
                 x = node(1);
                 y = node(2);
                 if(cost_map(x,y) == 1)
