@@ -1,4 +1,4 @@
-function [motion_lengths, motion_types, optimalCost, path] = computeDubinsPath(start, goal, minTurn)
+function dubinsPathSegment = computeDubinsPath(start, goal, minTurn)
     c = 1 / minTurn;
 
     s_yaw = start(3);
@@ -10,6 +10,8 @@ function [motion_lengths, motion_types, optimalCost, path] = computeDubinsPath(s
     c_v_to_w = [cos(-s_yaw), -sin(-s_yaw), 0; sin(-s_yaw), cos(-s_yaw), 0; 0, 0 , 1]; % Vehicle to World transform
     path = path * c_v_to_w + start;
     path(:, 3) = wrapToPi(path(:, 3));
+    
+    dubinsPathSegment = DubinsPathSegment(motion_lengths, motion_types, optimalCost, path);
 end
 
 function [motion_lengths, motion_types, optimalCost, path] = computeDubinsInternal(diff, c)

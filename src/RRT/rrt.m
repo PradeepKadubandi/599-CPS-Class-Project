@@ -11,6 +11,7 @@ classdef rrt < handle
         weight=[];
         distance = -1;
         tolerance = -1;
+        dubinsSegments = TwoDMap();
     end
     
     methods
@@ -25,10 +26,11 @@ classdef rrt < handle
             RRT.tolerance = tolerance;
         end
         
-        function [path, Tree] = run(Tree)
+        function [pathPos, dubinsSegments, Tree] = run(Tree)
             goalFlag = false;
             i = 2;
-            path = {[]};
+            pathPos = [];
+            dubinsSegments = {};
             Tree.nodes{1} = Tree.startPos;
             while i < Tree.iterations
                 rand = random(Tree);
@@ -36,14 +38,14 @@ classdef rrt < handle
                 if ~disFlag %true = satisfies min distance requirement
                     continue;
                 end
-                [newNode, newFlag] = generateNewNode(Tree, rand, near);
+                [~, newFlag] = generateNewNode(Tree, rand, near);
                 if ~newFlag
                     continue;
                 end
                 i = i+1;
                 if reachedGoal(Tree, near)
 %                    goalFlag = true;
-                     path = findPath(Tree);
+                     [pathPos, dubinsSegments] = findPath(Tree);
                      break;
                 end
             end
@@ -53,15 +55,18 @@ classdef rrt < handle
         end
         
         %returns a path from startPos to goalPos
-        function pathPos = findPath(Tree)
-            pathPos={[]};
+        function [pathPos, dubinsSegments] = findPath(Tree)
+            pathPos=[];
+            dubinsSegments = {};
             G = graph(Tree.s, Tree.t, Tree.weight);
             [goalIndex, flag] = findGoalNode(Tree);
             if flag
                 path = shortestpath(G, 1, goalIndex);
-                for i = 1:length(path)
-                    pathPos{i} = Tree.nodes{path(i)};
+                for i = 1:(length(path)-1)
+                    pathPos(end+1, :) = Tree.nodes{path(i)};
+                    dubinsSegments{end+1} = Tree.dubinsSegments.get([path(i), path(i+1)]);
                 end
+                pathPos(end+1, :) = Tree.nodes{path(end)};
             end
         end
         
@@ -107,7 +112,8 @@ classdef rrt < handle
             node(3) = atan(double(rand(2) - near-node(2))/double(rand(1) - near_node(1)));
 %             fprintf('original start node: %.1f %.1f %.1f\n', near_node(1), near_node(2), near_node(3));
 %             fprintf('original end node: %.1f %.1f %.1f\n', node(1), node(2), node(3));
-            [~, ~, ~, path] = computeDubinsPath(near_node, node, Tree.minTurning);
+            dubinsPathSegment = computeDubinsPath(near_node, node, Tree.minTurning);
+            path = dubinsPathSegment.PathPoses;
 %             disp(path);
             pathL = length(path);
             for j = 1:pathL
@@ -128,6 +134,7 @@ classdef rrt < handle
             Tree.s(i) = near;
             Tree.t(i) = i+1;
             Tree.weight(i) = dis;
+            Tree.dubinsSegments.put([near, i+1], dubinsPathSegment);
         end
         
         %generate a random node to explore, this method only checks if the random node is free not the entire path
