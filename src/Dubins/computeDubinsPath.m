@@ -1,37 +1,79 @@
-function [path, optimalMode, optimalCost] = computeDubinsPath(start, goal, minTurn)
+function [motion_lengths, motion_types, optimalCost, path] = computeDubinsPath(start, goal, minTurn)
     c = 1 / minTurn;
-    
+
+    s_yaw = start(3);
     diff = goal - start;
-    lex = cos(start(3)) * diff(1) + sin(start(3)) * diff(2);
-    ley = -1.0 * sin(start(3)) * diff(1) + cos(start(3)) * diff((2));
+    c_w_to_v = [cos(s_yaw), -sin(s_yaw), 0; sin(s_yaw), cos(s_yaw), 0; 0, 0 , 1];
+
+    [motion_lengths, motion_types, optimalCost, path] = computeDubinsInternal(diff * c_w_to_v, c);
     
-    [path, optimalMode, optimalCost] = computeDubinsInternal([lex, ley, diff(3)], c);
-    
+    c_v_to_w = [cos(-s_yaw), -sin(-s_yaw), 0; sin(-s_yaw), cos(-s_yaw), 0; 0, 0 , 1];
+    path = path * c_v_to_w + start;
+    path(:, 3) = wrapToPi(path(:, 3));
 end
 
-function [path, optimalMode, optimalCost] = computeDubinsInternal(diff, c)
+function [motion_lengths, motion_types, optimalCost, path] = computeDubinsInternal(diff, c)
     D = norm(diff(1:2));
     theta = wrapTo2Pi(atan2(diff(2), diff(1)));
     alpha = wrapTo2Pi(0.0 - theta);
     beta = wrapTo2Pi(diff(3) - theta);
-    
+
     optimalCost = inf;
-    optimalMode = nan;
+    motion_types = nan;
+    motion_lengths = nan;
     path = nan;
     allModes = {@LSL, @RSR, @LSR, @RSL, @RLR, @LRL};
-    
+
     for i = 1:length(allModes)
         [t1, t2, t3, mode] = allModes{i}(alpha, beta, D * c);
         currentCost = abs(t1) + abs(t2) + abs(t3);
         if ((~isnan(t1)) && (currentCost < optimalCost))
             optimalCost = currentCost;
-            [best_t1, best_t2, best_t3, optimalMode] = deal(t1, t2, t3, mode);
+            [best_t1, best_t2, best_t3, motion_types] = deal(t1, t2, t3, mode);
         end
     end
-    
-    if (~isnan(optimalMode))
-        path = [best_t1, best_t2, best_t3];
+
+    if (~isnan(motion_types))
+        motion_lengths = [best_t1, best_t2, best_t3];
+        path = generate_path(motion_lengths, motion_types, c);
     end
+end
+
+function path = generate_path(motion_lengths, motion_types, c)
+    path = [0, 0, 0];
+    for i = 1:3
+        pd = 0.0;
+        m = motion_types(i);
+        l = motion_lengths(i);
+
+        if (m == 'S')
+            d = 0.3 * c;
+        else
+            d = deg2rad(3.0);
+        end
+
+        while (pd < abs(l - d))
+            last = path(end, :);
+            transform = get_transform_helper(d, m, c, last(3));
+            path(end+1, :) = last + transform;
+            pd = pd + d;
+        end
+
+        last = path(end, :);
+        transform = get_transform_helper(l-pd, m, c, last(3));
+        path(end+1, :) = last + transform;
+    end
+end
+
+function transform = get_transform_helper(d, m, c, theta)
+    if (m == 'L')
+        offset = d;
+    elseif (m == 'S')
+        offset = 0;
+    else
+        offset = -d;
+    end
+    transform = [(d/c) * cos(theta), (d/c) * sin(theta), offset];
 end
 
 function [t1, t2, t3, mode] = LSL(alpha, beta, d)
