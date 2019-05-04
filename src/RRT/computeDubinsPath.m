@@ -3,11 +3,11 @@ function [motion_lengths, motion_types, optimalCost, path] = computeDubinsPath(s
 
     s_yaw = start(3);
     diff = goal - start;
-    c_w_to_v = [cos(s_yaw), -sin(s_yaw), 0; sin(s_yaw), cos(s_yaw), 0; 0, 0 , 1];
+    c_w_to_v = [cos(s_yaw), -sin(s_yaw), 0; sin(s_yaw), cos(s_yaw), 0; 0, 0 , 1]; % World to Vehicle transform
 
     [motion_lengths, motion_types, optimalCost, path] = computeDubinsInternal(diff * c_w_to_v, c);
     
-    c_v_to_w = [cos(-s_yaw), -sin(-s_yaw), 0; sin(-s_yaw), cos(-s_yaw), 0; 0, 0 , 1];
+    c_v_to_w = [cos(-s_yaw), -sin(-s_yaw), 0; sin(-s_yaw), cos(-s_yaw), 0; 0, 0 , 1]; % Vehicle to World transform
     path = path * c_v_to_w + start;
     path(:, 3) = wrapToPi(path(:, 3));
 end
