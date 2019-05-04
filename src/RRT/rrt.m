@@ -42,14 +42,14 @@ classdef rrt < handle
                 end
                 i = i+1;
                 if reachedGoal(Tree, near)
-                    goalFlag = true;
-%                     path = findPath(Tree);
-%                     break;
+%                    goalFlag = true;
+                     path = findPath(Tree);
+                     break;
                 end
             end
-            if goalFlag
-                path = findPath(Tree);
-            end
+%             if goalFlag
+%                 path = findPath(Tree);
+%             end
         end
         
         %returns a path from startPos to goalPos
@@ -100,19 +100,34 @@ classdef rrt < handle
         end
         
         function [node, flag] = generateNewNode(Tree, rand, near)
-            flag = false;
+            near_node = Tree.nodes{near};
+            flag = true;
             node = [rand(1), rand(2), -1];
-            dis = sqrt(double((Tree.nodes{near}(1) - rand(1))^2) + double((Tree.nodes{near}(2) - rand(2))^2)); 
-            if dis >= Tree.minTurning
-                i = length(Tree.nodes);
-                node(3) = fulltan(double(rand(2) - Tree.nodes{near}(2)), double(rand(1) - Tree.nodes{near}(1)));
-                Tree.nodes{i+1} = node;
-                Tree.s(i) = near;
-                Tree.t(i) = i+1;
-                Tree.weight(i) = dis;
-                flag = true;
-                return;
+            i = length(Tree.nodes);
+            node(3) = atan(double(rand(2) - near-node(2))/double(rand(1) - near_node(1)));
+%             fprintf('original start node: %.1f %.1f %.1f\n', near_node(1), near_node(2), near_node(3));
+%             fprintf('original end node: %.1f %.1f %.1f\n', node(1), node(2), node(3));
+            [~, ~, ~, path] = computeDubinsPath(near_node, node, Tree.minTurning);
+%             disp(path);
+            pathL = length(path);
+            for j = 1:pathL
+                temp_node = int64([path(j,1), path(j,2)]);
+                if(~inBound(Tree, temp_node(1), temp_node(2)))
+                    flag = false;
+                    return
+                end
+                if(~parking.isFree(Tree.costmap, temp_node))
+                    flag = false;
+                    return;
+                end
             end
+            node(1) = path(pathL, 1);
+            node(2) = path(pathL, 2);
+            dis = sqrt(double((near_node(1) - node(1))^2) + double(near_node(2) - node(2))^2); 
+            Tree.nodes{i+1} = node;
+            Tree.s(i) = near;
+            Tree.t(i) = i+1;
+            Tree.weight(i) = dis;
         end
         
         %generate a random node to explore, this method only checks if the random node is free not the entire path
