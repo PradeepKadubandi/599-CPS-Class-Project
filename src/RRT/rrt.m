@@ -12,6 +12,8 @@ classdef rrt < handle
         distance = -1;
         tolerance = -1;
         dubinsSegments = TwoDMap();
+        connIntermediate; %DubinsConnection for intermediate points (uses iterpolation steps)
+        connLast; %DubinsConnection for goal points (ignores iterpolation steps and calculates the whole path)
     end
     
     methods
@@ -24,6 +26,8 @@ classdef rrt < handle
             RRT.minTurning = minTurning;
             RRT.distance = distance;
             RRT.tolerance = tolerance;
+            RRT.connIntermediate = DubinsConnection(minTurning, 20, true);
+            RRT.connLast = DubinsConnection(minTurning, 20, false);
         end
         
         function [pathPos, dubinsSegments, Tree] = run(Tree)
@@ -112,7 +116,7 @@ classdef rrt < handle
             node(3) = atan(double(rand(2) - near-node(2))/double(rand(1) - near_node(1)));
 %             fprintf('original start node: %.1f %.1f %.1f\n', near_node(1), near_node(2), near_node(3));
 %             fprintf('original end node: %.1f %.1f %.1f\n', node(1), node(2), node(3));
-            dubinsPathSegment = computeDubinsPath(near_node, node, Tree.minTurning);
+            dubinsPathSegment = Tree.connIntermediate.computeDubinsPath(near_node, node);
             path = dubinsPathSegment.PathPoses;
 %             disp(path);
             pathL = length(path);
@@ -213,6 +217,8 @@ classdef rrt < handle
 %                      disp(Tree.nodes{Tree.s(i-1)});
 %                      disp(Tree.nodes{Tree.t(i-1)});
                     Tree.weight(i-1) = dis2;
+                    dubinsPathSegment = Tree.connLast.computeDubinsPath(nearNode, Tree.goalPos);
+                    Tree.dubinsSegments.put([near, i], dubinsPathSegment);
                     flag = true;
                 end
             else
