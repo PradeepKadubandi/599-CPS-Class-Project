@@ -1,0 +1,14 @@
+T = 50
+startX = 4
+startY = 12
+startT = 0
+endX = 55.8956329316203
+endY = 10.8957892655718
+endT = 0
+
+# car must reach the goal
+meetX := (x_out == endX)
+meetX := (y_out == endY)
+safeFollowing := ev_[0,T] (meetX & meetY)
+
+# Collision
