@@ -26,14 +26,14 @@ classdef rrt < handle
             RRT.minTurning = minTurning;
             RRT.distance = distance;
             RRT.tolerance = tolerance;
-            RRT.connIntermediate = DubinsConnection(minTurning, 20, true);
+            RRT.connIntermediate = DubinsConnection(minTurning, 20, false);
             RRT.connLast = DubinsConnection(minTurning, 20, false);
         end
         
         function [pathPos, dubinsSegments, Tree] = run(Tree)
             goalFlag = false;
             i = 2;
-            pathPos = [];
+            pathPos = {[]};
             dubinsSegments = {};
             Tree.nodes{1} = Tree.startPos;
             while i < Tree.iterations
@@ -124,7 +124,7 @@ classdef rrt < handle
                 temp_node = int64([path(j,1), path(j,2)]);
                 if(~inBound(Tree, temp_node(1), temp_node(2)))
                     flag = false;
-                    return
+                    return;
                 end
                 if(~parking.isFree(Tree.costmap, temp_node))
                     flag = false;
@@ -133,6 +133,7 @@ classdef rrt < handle
             end
             node(1) = path(pathL, 1);
             node(2) = path(pathL, 2);
+            node(3) = path(pathL, 3);
             dis = sqrt(double((near_node(1) - node(1))^2) + double(near_node(2) - node(2))^2); 
             Tree.nodes{i+1} = node;
             Tree.s(i) = near;
@@ -143,38 +144,26 @@ classdef rrt < handle
         
         %generate a random node to explore, this method only checks if the random node is free not the entire path
         function rand_node = random(Tree)
-             near_index = ceil(rand * length(Tree.nodes));
-             rand_node_in_tree = Tree.nodes{near_index};
-%             sz = size(Tree.costmap);
-%             x = sz(1)
-%             y = sz(2)
+            near_index = ceil(rand * length(Tree.nodes));
+            rand_node_in_tree = Tree.nodes{near_index};
             rand_node = [-1, -1];
             while true
                 r = -2*Tree.distance + (4*Tree.distance)*rand(2,1);
                 x_rand = rand_node_in_tree(1) + r(1);
                 y_rand = rand_node_in_tree(2) + r(2);
-%                 x_rand = rand*x;
-%                 y_rand = rand*y;
-%                 curr_node = int64([x_rand(1), y_rand(1)]);
                 %if not inbound, generate again
                 if ~inBound(Tree, x_rand, y_rand)
                     continue;
                 end
                 
-                dis = sqrt(double((x_rand - rand_node_in_tree(1))^2) + double(y_rand - rand_node_in_tree(2))^2); 
-                if dis < Tree.distance
-                    continue;
-                end 
                 curr_node = [int64(x_rand), int64(y_rand)];
                 if ~inTree(Tree, curr_node)
                     if parking.isFree(Tree.costmap, curr_node)
                         rand_node = double(curr_node);
-%                         fprintf('generated new node dis is %.1f', dis);
                         break;
                     end
                 end
             end
-            
         end
         
         function flag = inBound(Tree, x, y)
@@ -212,12 +201,22 @@ classdef rrt < handle
                 nearNode = Tree.nodes{near};
                 dis2 = sqrt(double((nearNode(1) - Tree.goalPos(1))^2) + double((nearNode(2) - Tree.goalPos(2))^2));
                 if(dis2 >= Tree.minTurning)
+                    dubinsPathSegment = Tree.connIntermediate.computeDubinsPath(nearNode, Tree.goalPos);
+                    path = dubinsPathSegment.PathPoses;
+                    pathL = length(path);
+                    for j = 1:pathL
+                        temp_node = int64([path(j,1), path(j,2)]);
+                        if(~inBound(Tree, temp_node(1), temp_node(2)))
+                            flag = false;
+                            return;
+                        end
+                        if(~parking.isFree(Tree.costmap, temp_node))
+                            flag = false;
+                            return;
+                        end
+                    end
                     Tree.nodes{i} = Tree.goalPos;
-                    Tree.t(i-1) = i;
-%                      disp(Tree.nodes{Tree.s(i-1)});
-%                      disp(Tree.nodes{Tree.t(i-1)});
                     Tree.weight(i-1) = dis2;
-                    dubinsPathSegment = Tree.connLast.computeDubinsPath(nearNode, Tree.goalPos);
                     Tree.dubinsSegments.put([near, i], dubinsPathSegment);
                     flag = true;
                 end

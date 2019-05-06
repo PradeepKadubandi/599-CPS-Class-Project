@@ -15,6 +15,9 @@ classdef parking
 
                 % Get each pair of lines
                 road_i = path_f(idx);
+                if ~contains(road_i.NAME ,"Lane") && ~contains(road_i.NAME ,"Boundary")
+                    continue;
+                end
                 line_l = size(road_i.X, 2);
                 for pair = 1:line_l-2
                     x_0 = parking.normalize_val(road_i.X(pair), min_col, max_col, cols);
